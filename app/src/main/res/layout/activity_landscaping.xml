@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f5e0d6">
+
+    <ImageView
+        android:id="@+id/landscapingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="263dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/landscapingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Landscaping"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/landscapingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fees: R2500"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/landscapingPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose: To create aesthetically pleasing outdoor spaces"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/landscapingContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content:\n1. Plant selection\n2. Soil preparation\n3. Garden design\n4. Maintenance techniques"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/landscapingBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#7b5843"
+        android:textColor="#ffffff"/>
+</LinearLayout>

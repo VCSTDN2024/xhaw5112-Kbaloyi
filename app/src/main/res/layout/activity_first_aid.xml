@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f5e0d6">
+
+    <ImageView
+        android:id="@+id/firstAidImage"
+        android:layout_width="wrap_content"
+        android:layout_height="239dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/firstAidTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Aid"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/firstAidFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fees: R1000"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/firstAidPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose: To provide essential first aid skills"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/firstAidContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content:\n1. CPR\n2. Wound care\n3. Emergency response\n4. Basic medical knowledge"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/firstAidBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#7b5843"
+        android:textColor="#ffffff"/>
+</LinearLayout>

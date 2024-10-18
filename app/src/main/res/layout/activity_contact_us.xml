@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F4E7D3"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvContactUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="24sp"
+        android:textColor="#7E5C40"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: empoweringthenations@en.co.za"
+        android:textColor="#7E5C40"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: 083 978 1243"
+        android:textColor="#7E5C40"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:backgroundTint="#7E5C40"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKILLS FOR A BRIGHTER TOMORROW"
+        android:textColor="#7E5C40"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Total Fees - Empowering the Nation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+        .course {
+            margin: 10px 0;
+        }
+        button {
+            margin-top: 10px;
+        }
+        #total-fee {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Courses</a>
+                <div class="dropdown-content">
+                    <a href="six-month.html">Six Month Course</a>
+                    <a href="six-week.html">Six Week Course</a>
+                </div>
+            </li>
+            <li><a href="fees.html">Total Fees</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Calculate Total Fees</h1>
+    </header>
+
+    <section>
+        <form id="feeForm">
+            <h2>Contact Details</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <h2>Select Courses</h2>
+            <div class="course">
+                <input type="checkbox" id="firstAid" name="courses" value="1500">
+                <label for="firstAid">First Aid - R1500</label>
+            </div>
+            <div class="course">
+                <input type="checkbox" id="sewing" name="courses" value="1500">
+                <label for="sewing">Sewing - R1500</label>
+            </div>
+            <div class="course">
+                <input type="checkbox" id="landscaping" name="courses" value="1500">
+                <label for="landscaping">Landscaping - R1500</label>
+            </div>
+            <div class="course">
+                <input type="checkbox" id="lifeSkills" name="courses" value="1500">
+                <label for="lifeSkills">Life Skills - R1500</label>
+            </div>
+            <div class="course">
+                <input type="checkbox" id="childMinding" name="courses" value="750">
+                <label for="childMinding">Child Minding - R750</label>
+            </div>
+            <div class="course">
+                <input type="checkbox" id="cooking" name="courses" value="750">
+                <label for="cooking">Cooking - R750</label>
+            </div>
+            <div class="course">
+                <input type="checkbox" id="gardenMaintenance" name="courses" value="750">
+                <label for="gardenMaintenance">Garden Maintenance - R750</label>
+            </div>
+
+            <button type="button" onclick="calculateTotal()">Calculate Total Fees</button>
+        </form>
+
+        <div id="total-fee"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2018 Empowering the Nation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function calculateTotal() {
+            const checkboxes = document.querySelectorAll('input[name="courses"]:checked');
+            let total = 0;
+            const discountRate = 0.1; // 10% discount on total
+            const vatRate = 0.15; // 15% VAT
+
+            // Calculate total from selected courses
+            checkboxes.forEach((checkbox) => {
+                total += parseFloat(checkbox.value);
+            });
+
+            // Apply discount if applicable
+            let discount = 0;
+            if (total > 3000) { // Apply discount if total is above R3000
+                discount = total * discountRate;
+            }
+
+            // Calculate VAT on the discounted total
+            const discountedTotal = total - discount;
+            const vat = discountedTotal * vatRate;
+            const finalTotal = discountedTotal + vat;
+
+            // Display total fee
+            document.getElementById('total-fee').innerHTML = 
+                `Total Fees: R${finalTotal.toFixed(2)} (Discount: R${discount.toFixed(2)}, VAT: R${vat.toFixed(2)})`;
+        }
+    </script>
+</body>
+</html>

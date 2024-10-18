@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f5e0d6">
+
+    <ImageView
+        android:id="@+id/sewingImage"
+        android:layout_width="wrap_content"
+        android:layout_height="216dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/sewingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sewing"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/sewingFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fees: R1500"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/sewingPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose: To provide alterations and new garment tailoring services"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/sewingContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content:\n1. Types of stitches\n2. Threading a sewing machine\n3. Sewing buttons, zips, hems and seams\n4. Alterations\n5. Designing and sewing new garments"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/sewingBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#7b5843"
+        android:textColor="#ffffff"/>
+</LinearLayout>

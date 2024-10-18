@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#f5e0d6">
+
+    <ImageView
+        android:id="@+id/lifeSkillsImage"
+        android:layout_width="wrap_content"
+        android:layout_height="234dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/lifeSkillsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Life Skills"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/lifeSkillsFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fees: R1200"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/lifeSkillsPurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purpose: To equip learners with essential life skills"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/lifeSkillsContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Content:\n1. Time management\n2. Communication skills\n3. Financial literacy\n4. Problem-solving"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/lifeSkillsBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#7b5843"
+        android:textColor="#ffffff"/>
+</LinearLayout>
